@@ -32,5 +32,5 @@ app.get("/api/getkey", (req, res) =>
 
 app.get("/", (req, res) => res.send("Hello Developer Z"));
 app.listen(port, () => {
-  console.log(`Admin Panel  listening at http://localhost:${port}`);
+  console.log(`Admin Panel  listening at {port}`);
 });
