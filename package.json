@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "iNotebook - Your notebook on the cloud",
+  "description": "Invoice Genarator Backend ",
   "main": "index.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -21,7 +21,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon ",
-    "start": "nodemon Backend/index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
