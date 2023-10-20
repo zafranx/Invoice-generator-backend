@@ -30,6 +30,7 @@ router.post("/checkout", async (req, res) => {
   }
 });
 
+  process.env.Payment_success_redirect || "http://localhost:3000";
 
 router.post("/paymentVerification", async (req, res) => {
   try {
@@ -55,7 +56,7 @@ router.post("/paymentVerification", async (req, res) => {
       });
 
       res.redirect(
-        `http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`
+        `${redirectUrl}/paymentsuccess?reference=${razorpay_payment_id}`
       );
     } else {
       res.status(400).json({
